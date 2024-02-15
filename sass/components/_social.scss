@@ -1,0 +1,31 @@
+.social{
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.social__item:not(:last-child){
+    margin-right: 10px;
+}
+
+.social__link{
+    display: block;
+    height: 44px;
+    padding: 12px;
+    fill:$social-primary-color;
+    background-color:$primary-background-color;
+    border-radius: 50px;
+    transition: fill $cubic,
+    background-color $cubic;
+
+    &:hover,
+    &:focus{
+        fill:$primary-background-color;
+        background-color:$logo-part-color;
+    }
+}
+
+.social__link--color{
+    fill:$primary-background-color;
+    background-color:$background-elips-color;
+}

@@ -1,0 +1,34 @@
+.navigation-social{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 64px;
+
+    @media screen and (min-width:768px ) {
+        display: none;
+    }
+}
+
+.navigation-social__item{
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.navigation-social__item:not(:last-child)::after{
+    content: " ";
+    background-color: $navigation-social-border-color;
+    display: block;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 2px;
+    height: 100%;
+}
+
+.navigation-social__link{ 
+    color: $logo-part-color;
+    transition: color $cubic;
+    
+    &:hover,
+    &:focus{
+        color: $primary-text-color;
+    }
+}

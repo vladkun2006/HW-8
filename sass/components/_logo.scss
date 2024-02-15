@@ -1,0 +1,30 @@
+.logo{
+    color:$logo-part-color;
+    font-family: Raleway;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.03em;
+
+    @media screen and (min-width:768px){
+        margin-right: 93px;
+    }
+
+    @media screen and (min-width:1200px){
+        font-size: 26px;
+    }
+}
+
+.logo--margin{
+    @media screen and (min-width:768px){
+        margin-right: 0px;
+    }
+}
+
+.logo__part{
+    color:$logo-color;
+}
+
+.logo__part--color{
+    color:$primary-background-color;
+}

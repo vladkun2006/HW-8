@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="header__container container">
+      <nav class="navigation">
+        <a class="logo" href="./index.html"> 
+          Web<span class="logo__part">Studio</span>
+        </a> 
+        <button class="navigation__button" data-menu-button>
+          <svg class="navigation__svg"
+          width="40px" 
+          height="40px" 
+          aria-label="switch button for menu"
+          aria-expanded="false"
+          role="button"
+          >
+            <use class="navigation__icon-menu" href="./img1/svg/sprite1.svg#icon-menu-open"></use>
+            <use class="navigation__icon-cross" href="./img1/svg/sprite1.svg#icon-menu-close"></use>
+          </svg>
+        </button>
+        <div class="navigation__menu" data-menu>
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="./index.html">
+                Studio
+              </a>
+            </li>
+            <li class="navigation__item navigation__item--position">
+              <a class="navigation__link  navigation__link--active" href="./portfolio.html">
+                Portfolio
+              </a>       
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                Contacts
+              </a>
+            </li>
+          </ul> 
+          <ul class="contacts">
+            <li class="contacts__item">
+              <a class="contacts__link" href="tel:+12127724150">
+                <svg class="contacts__svg" width="10px" height="16px">
+                  <use href="./img1/svg/sprite1.svg#icon-smartphone"></use>
+                </svg>
+                +1 212-772-4150
+              </a>
+            </li>
+            <li class="contacts__item contacts__item--color">
+              <a class="contacts__link contacts__link--color" href="mailto:info@devstudio.com">
+                <svg class="contacts__svg contacts__svg--height" width="16px" height="12px">
+                  <use href="./img1/svg/sprite1.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <ul class="navigation-social">
+              <li class="navigation-social__item">
+                <a class="navigation-social__link" href="#">
+                  Instagram
+                </a>
+              </li>
+              <li class="navigation-social__item">
+                <a class="navigation-social__link" href="#">
+                  Twitter
+                </a>
+              </li>
+              <li class="navigation-social__item">
+                <a class="navigation-social__link" href="#">
+                  Facebook
+                </a>
+              </li>
+              <li class="navigation-social__item">
+                <a class="navigation-social__link" href="#">
+                  LinkedIn
+                </a>
+              </li>
+            </ul>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+    <main class="partfolio">
+      <section class="partfolio__section container">
+        <h2 class="partfolio__title is-hidden">
+          partfolio
+        </h2>
+        <ul class="filters">
+          <li class="filters__item">  
+            <button class="filters__btn" type="button">
+              All
+            </button>
+          </li>
+          <li class="filters__item">
+            <button class="filters__btn" type="button">
+              Web-sites
+            </button>
+          </li>
+          <li class="filters__item">
+            <button class="filters__btn" type="button">
+              Apps
+            </button>
+          </li>
+          <li class="filters__item">
+            <button class="filters__btn" type="button">
+              Design
+            </button>
+          </li>
+          <li class="filters__item">
+            <button class="filters__btn" type="button">
+              Marketing
+            </button>
+          </li>
+        </ul>
+        <ul class="project">
+          <li class="project__item">
+            <a class="project__link" href="#">
+              <div class="project__container">
+                <picture>
+                  <source 
+                  srcset=" 
+                  ./img1/partfolio/partfolio1-mobile-1x.jpg 1x , 
+                  ./img1/partfolio/partfolio1-mobile-2x.jpg 2x , 
+                  ./img1/partfolio/partfolio1-mobile-3x.jpg 3x" 
+                  type="image/jpeg" 
+                  media="(max-width: 480px)"
+                  >
+
+                  <source 
+                  srcset=" 
+                  ./img1/partfolio/partfolio1-tablet-1x.jpg 1x , 
+                  ./img1/partfolio/partfolio1-tablet-2x.jpg 2x , 
+                  ./img1/partfolio/partfolio1-tablet-3x.jpg 3x" 
+                  type="image/jpeg" 
+                  media="(max-width: 768px)"
+                  >
+
+                  <source 
+                  srcset=" 
+                  ./img1/partfolio/partfolio1-pc-1x.jpg 1x , 
+                  ./img1/partfolio/partfolio1-pc-2x.jpg 2x , 
+                  ./img1/partfolio/partfolio1-pc-3x.jpg 3x" 
+                  type="image/jpeg" 
+                  media="(min-width: 769px)"
+                  >
+
+                  <img class="project__img" src="./img1/partfolio/partfolio1-pc-3x.jpg" alt="typing">
+                </picture>
+                <div class="project__overlay">
+                  <p class="project__text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+                </div>
+              </div>
+              <div class="project-desc">
+                <h3 class="project-desc__title">Technoduck</h3>
+                <p class="project-desc__text">Web-site</p>
+              </div>
+            </a>
+          </li>
+          <li class="project__item">
+            <a class="project__link" href="#">
+              <div class="project__container">
+                <picture>
+                  <source 
+                  srcset=" 
+                  ./img1/partfolio/partfolio2-mobile-1x.jpg 1x , 
+                  ./img1/partfolio/partfolio2-mobile-2x.jpg 2x , 
+                  ./img1/partfolio/partfolio2-mobile-3x.jpg 3x" 
+                  type="image/jpeg" 
+                  media="(max-width: 480px)"
+                  >
+
+                  <source 
+                  srcset=" 
+                  ./img1/partfolio/partfolio2-tablet-1x.jpg 1x , 
+                  ./img1/partfolio/partfolio2-tablet-2x.jpg 2x , 
+                  ./img1/partfolio/partfolio2-tablet-3x.jpg 3x" 
+                  type="image/jpeg" 
+                  media="(max-width: 768px)"
+                  >
+
+                  <source 
+                  srcset=" 
+                  ./img1/partfolio/partfolio2-pc-1x.jpg 1x , 
+                  ./img1/partfolio/partfolio2-pc-2x.jpg 2x , 
+                  ./img1/partfolio/partfolio2-pc-3x.jpg 3x" 
+                  type="image/jpeg" 
+                  media="(min-width: 769px)"
+                  >
+
+                  <img class="project__img" src="./img1/partfolio/partfolio2-pc-3x.jpg" alt="typing">
+                </picture>
+                <div class="project__overlay">
+                  <p class="project__text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+                </div>
+              </div>
+              <div class="project-desc">
+                <h3 class="project-desc__title">Poster New Orlean vs Golden Star</h3>
+                <p class="project-desc__text">Design</p>
+              </div>
+            </a>
+          </li>
+          <li class="project__item">
+            <a class="project__link" href="#">
+              <div class="project__container">
+                <picture>
+                  <source 
+                  srcset=" 
+                  ./img1/partfolio/partfolio3-mobile-1x.jpg 1x , 
+                  ./img1/partfolio/partfolio3-mobile-2x.jpg 2x , 
+                  ./img1/partfolio/partfolio3-mobile-3x.jpg 3x" 
+                  type="image/jpeg" 
+                  media="(max-width: 480px)"
+                  >
+
+                  <source 
+                  srcset=" 
+                  ./img1/partfolio/partfolio3-tablet-1x.jpg 1x , 
+                  ./img1/partfolio/partfolio3-tablet-2x.jpg 2x , 
+                  ./img1/partfolio/partfolio3-tablet-3x.jpg 3x" 
+                  type="image/jpeg" 
+                  media="(max-width: 768px)"
+                  >
+
+                  <source 
+                  srcset=" 
+                  ./img1/partfolio/partfolio3-pc-1x.jpg 1x , 
+                  ./img1/partfolio/partfolio3-pc-2x.jpg 2x , 
+                  ./img1/partfolio/partfolio3-pc-3x.jpg 3x" 
+                  type="image/jpeg" 
+                  media="(min-width: 769px)"
+                  >
+
+                  <img class="project__img" src="./img1/partfolio/partfolio3-pc-3x.jpg" alt="typing">
+                </picture>
+                <div class="project__overlay">
+                  <p class="project__text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+                </div>
+              </div>
+              <div class="project-desc">
+                <h3 class="project-desc__title">Seafood Restaurant</h3>
+                <p class="project-desc__text">Apps</p>
+              </div>
+            </a>
+          </li>
+          <li class="project__item">
+            <a class="project__link" href="#">
+              <div class="project__container">
+                <picture>
+                  <source 
+                  srcset=" 
+                  ./img1/partfolio/partfolio4-mobile-1x.jpg 1x , 
+                  ./img1/partfolio/partfolio4-mobile-2x.jpg 2x , 
+                  ./img1/partfolio/partfolio4-mobile-3x.jpg 3x" 
+                  type="image/jpeg" 
+                  media="(max-width: 480px)"
+                  >
+
+                  <source 
+                  srcset=" 
+                  ./img1/partfolio/partfolio4-tablet-1x.jpg 1x , 
+                  ./img1/partfolio/partfolio4-tablet-2x.jpg 2x , 
+                  ./img1/partfolio/partfolio4-tablet-3x.jpg 3x" 
+                  type="image/jpeg" 
+                  media="(max-width: 768px)"
+                  >
+
+                  <source 
+                  srcset=" 
+                  ./img1/partfolio/partfolio4-pc-1x.jpg 1x , 
+                  ./img1/partfolio/partfolio4-pc-2x.jpg 2x , 
+                  ./img1/partfolio/partfolio4-pc-3x.jpg 3x" 
+                  type="image/jpeg" 
+                  media="(min-width: 769px)"
+                  >
+
+                  <img class="project__img" src="./img1/partfolio/partfolio4-pc-3x.jpg" alt="typing">
+                </picture>
+                <div class="project__overlay">
+                  <p class="project__text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+                </div>
+              </div>
+              <div class="project-desc">
+                <h3 class="project-desc__title">Project Prime</h3>
+                <p class="project-desc__text">Marketing</p>
+              </div>
+            </a>
+          </li>
+          <li class="project__item">
+            <a class="project__link" href="#">
+              <div class="project__container">
+                <picture>
+                  <source 
+                  srcset=" 
+                  ./img1/partfolio/partfolio5-mobile-1x.jpg 1x , 
+                  ./img1/partfolio/partfolio5-mobile-2x.jpg 2x , 
+                  ./img1/partfolio/partfolio5-mobile-3x.jpg 3x" 
+                  type="image/jpeg" 
+                  media="(max-width: 480px)"
+                  >
+
+                  <source 
+                  srcset=" 
+                  ./img1/partfolio/partfolio5-tablet-1x.jpg 1x , 
+                  ./img1/partfolio/partfolio5-tablet-2x.jpg 2x , 
+                  ./img1/partfolio/partfolio5-tablet-3x.jpg 3x" 
+                  type="image/jpeg" 
+                  media="(max-width: 768px)"
+                  >
+
+                  <source 
+                  srcset=" 
+                  ./img1/partfolio/partfolio5-pc-1x.jpg 1x , 
+                  ./img1/partfolio/partfolio5-pc-2x.jpg 2x , 
+                  ./img1/partfolio/partfolio5-pc-3x.jpg 3x" 
+                  type="image/jpeg" 
+                  media="(min-width: 769px)"
+                  >
+
+                  <img class="project__img" src="./img1/partfolio/partfolio5-pc-3x.jpg" alt="typing">
+                </picture>
+                <div class="project__overlay">
+                  <p class="project__text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+                </div>
+              </div>
+              <div class="project-desc">
+                <h3 class="project-desc__title">Project Boxes</h3>
+                <p class="project-desc__text">Apps</p>
+              </div>
+            </a>
+          </li>
+          <li class="project__item">
+            <a class="project__link" href="#">
+              <div class="project__container">
+                <picture>
+                  <source 
+                  srcset=" 
+                  ./img1/partfolio/partfolio6-mobile-1x.jpg 1x , 
+                  ./img1/partfolio/partfolio6-mobile-2x.jpg 2x , 
+                  ./img1/partfolio/partfolio6-mobile-3x.jpg 3x" 
+                  type="image/jpeg" 
+                  media="(max-width: 480px)"
+                  >
+
+                  <source 
+                  srcset=" 
+                  ./img1/partfolio/partfolio6-tablet-1x.jpg 1x , 
+                  ./img1/partfolio/partfolio6-tablet-2x.jpg 2x , 
+                  ./img1/partfolio/partfolio6-tablet-3x.jpg 3x" 
+                  type="image/jpeg" 
+                  media="(max-width: 768px)"
+                  >
+
+                  <source 
+                  srcset=" 
+                  ./img1/partfolio/partfolio6-pc-1x.jpg 1x , 
+                  ./img1/partfolio/partfolio6-pc-2x.jpg 2x , 
+                  ./img1/partfolio/partfolio6-pc-3x.jpg 3x" 
+                  type="image/jpeg" 
+                  media="(min-width: 769px)"
+                  >
+
+                  <img class="project__img" src="./img1/partfolio/partfolio6-pc-3x.jpg" alt="typing">
+                </picture>
+                <div class="project__overlay">
+                  <p class="project__text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+                </div>
+              </div>
+              <div class="project-desc">
+                <h3 class="project-desc__title">Inspiration has no Borders</h3>
+                <p class="project-desc__text">Web-site</p>
+              </div>
+            </a>
+          </li>
+          <li class="project__item">
+            <a class="project__link" href="#">
+              <div class="project__container">
+                <picture>
+                  <source 
+                  srcset=" 
+                  ./img1/partfolio/partfolio7-mobile-1x.jpg 1x , 
+                  ./img1/partfolio/partfolio7-mobile-2x.jpg 2x , 
+                  ./img1/partfolio/partfolio7-mobile-3x.jpg 3x" 
+                  type="image/jpeg" 
+                  media="(max-width: 480px)"
+                  >
+
+                  <source 
+                  srcset=" 
+                  ./img1/partfolio/partfolio7-tablet-1x.jpg 1x , 
+                  ./img1/partfolio/partfolio7-tablet-2x.jpg 2x , 
+                  ./img1/partfolio/partfolio7-tablet-3x.jpg 3x" 
+                  type="image/jpeg" 
+                  media="(max-width: 768px)"
+                  >
+
+                  <source 
+                  srcset=" 
+                  ./img1/partfolio/partfolio7-pc-1x.jpg 1x , 
+                  ./img1/partfolio/partfolio7-pc-2x.jpg 2x , 
+                  ./img1/partfolio/partfolio7-pc-3x.jpg 3x" 
+                  type="image/jpeg" 
+                  media="(min-width: 769px)"
+                  >
+
+                  <img class="project__img" src="./img1/partfolio/partfolio7-pc-3x.jpg" alt="typing">
+                </picture>
+                <div class="project__overlay">
+                  <p class="project__text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+                </div>
+              </div>
+              <div class="project-desc">
+                <h3 class="project-desc__title">Limited Edition</h3>
+                <p class="project-desc__text">Design</p>
+              </div>
+            </a>
+          </li>
+          <li class="project__item">
+            <a class="project__link" href="#">
+              <div class="project__container">
+                <picture>
+                  <source 
+                  srcset=" 
+                  ./img1/partfolio/partfolio8-mobile-1x.jpg 1x , 
+                  ./img1/partfolio/partfolio8-mobile-2x.jpg 2x , 
+                  ./img1/partfolio/partfolio8-mobile-3x.jpg 3x" 
+                  type="image/jpeg" 
+                  media="(max-width: 480px)"
+                  >
+
+                  <source 
+                  srcset=" 
+                  ./img1/partfolio/partfolio8-tablet-1x.jpg 1x , 
+                  ./img1/partfolio/partfolio8-tablet-2x.jpg 2x , 
+                  ./img1/partfolio/partfolio8-tablet-3x.jpg 3x" 
+                  type="image/jpeg" 
+                  media="(max-width: 768px)"
+                  >
+
+                  <source 
+                  srcset=" 
+                  ./img1/partfolio/partfolio8-pc-1x.jpg 1x , 
+                  ./img1/partfolio/partfolio8-pc-2x.jpg 2x , 
+                  ./img1/partfolio/partfolio8-pc-3x.jpg 3x" 
+                  type="image/jpeg" 
+                  media="(min-width: 769px)"
+                  >
+
+                  <img class="project__img" src="./img1/partfolio/partfolio8-pc-3x.jpg" alt="typing">
+                </picture>
+                <div class="project__overlay">
+                  <p class="project__text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+                </div>
+              </div>
+              <div class="project-desc">
+                <h3 class="project-desc__title">Project LAB</h3>
+                <p class="project-desc__text">Marketing</p>
+              </div>
+            </a>
+          </li>
+          <li class="project__item">
+            <a class="project__link" href="#">
+              <div class="project__container">
+                <picture>
+                  <source 
+                  srcset=" 
+                  ./img1/partfolio/partfolio9-mobile-1x.jpg 1x , 
+                  ./img1/partfolio/partfolio9-mobile-2x.jpg 2x , 
+                  ./img1/partfolio/partfolio9-mobile-3x.jpg 3x" 
+                  type="image/jpeg" 
+                  media="(max-width: 480px)"
+                  >
+
+                  <source 
+                  srcset=" 
+                  ./img1/partfolio/partfolio9-tablet-1x.jpg 1x , 
+                  ./img1/partfolio/partfolio9-tablet-2x.jpg 2x , 
+                  ./img1/partfolio/partfolio9-tablet-3x.jpg 3x" 
+                  type="image/jpeg" 
+                  media="(max-width: 768px)"
+                  >
+
+                  <source 
+                  srcset=" 
+                  ./img1/partfolio/partfolio9-pc-1x.jpg 1x , 
+                  ./img1/partfolio/partfolio9-pc-2x.jpg 2x , 
+                  ./img1/partfolio/partfolio9-pc-3x.jpg 3x" 
+                  type="image/jpeg" 
+                  media="(min-width: 769px)"
+                  >
+
+                  <img class="project__img" src="./img1/partfolio/partfolio9-pc-3x.jpg" alt="typing">
+                </picture>
+                <div class="project__overlay">
+                  <p class="project__text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+                </div>
+              </div>
+              <div class="project-desc">
+                <h3 class="project-desc__title">Growing Business</h3>
+                <p class="project-desc__text">Apps</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__adress">
+          <a class="logo logo--margin" href="./index.html">
+            Web<span class="logo__part logo__part--color">Studio</span>
+          </a>
+          <address class="adress">      
+            <a class="adress__link" href="https://www.google.com/maps/place/695+Park+Ave,+New+York,+NY+10065,+%D0%A1%D0%A8%D0%90/@40.7688994,-73.9676005,17z/data=!3m1!4b1!4m6!3m5!1s0x89c258ebe8836e8f:0xa007c44e7c4aa0eb!8m2!3d40.7688994!4d-73.9650256!16s%2Fg%2F11c250btd8?entry=ttu">
+              695 Park Ave, NY 10065, USA
+            </a>
+          </address>
+          <ul class="footer-contacts">
+            <li class="footer-contacts__item">
+              <a class="footer-contacts__link" href="mailto:info@devstudio.com">
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="footer-contacts__item">
+              <a class="footer-contacts__link" href="tel:+12127724150">
+                +1 212-772-4150
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__social">
+            <p class="footer__title footer__title--margin">Find us on</p>
+            <ul class="social">
+              <li class="social__item">
+                <a class="social__link social__link--color" aria-label="to social media" href="#">
+                  <svg class="social__svg" width="20px" height="20px">
+                    <use href="./img1/svg/sprite1.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--color" aria-label="to social media" href="#">
+                  <svg class="social__svg" width="20px" height="20px">
+                    <use href="./img1/svg/sprite1.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--color" aria-label="to social media" href="#">
+                  <svg class="social__svg" width="20px" height="20px">
+                    <use href="./img1/svg/sprite1.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--color" aria-label="to social media" href="#">
+                  <svg class="social__svg" width="20px" height="20px">
+                    <use href="./img1/svg/sprite1.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+        </div>
+        <div class="footer__form">
+          <p class="footer__title">Subscribe to the newsletter</p>
+          <form class="mini-form">
+    
+            <input class="mini-form__input" placeholder="E-mail" type="email">
+    
+            <button class="btn footer__btn" type="submit">
+              Subscribe 
+              <svg class="btn__svg" width="24px" height="24px">
+                <use href="img1/svg/sprite1.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  <script src="./js/menu.js"></script>
+</body>
+</html>
