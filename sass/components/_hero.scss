@@ -6,6 +6,13 @@
     background-size: cover;
     text-align: center;
     background-color:$hero-background;
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    @media screen and (min-width:1200px){
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
 
     &.is-open{
         background-image: none;
@@ -26,7 +33,7 @@
         background-image: linear-gradient(to right, $hero-gradient, $hero-gradient),  url(../img1/index/hero/hero-mobile-3x.jpg);
     }   
 
-    @media screen and (min-width:481px) {
+    @media screen and (min-width:768px) {
         background-image: linear-gradient(to right, $hero-gradient, $hero-gradient),  url(../img1/index/hero/hero-tablet-1x.jpg);
 
         @media 
@@ -44,7 +51,7 @@
         }
     }
 
-    @media screen and (min-width:769px) {
+    @media screen and (min-width:1200px) {
         background-image: linear-gradient(to right, $hero-gradient, $hero-gradient),  url(../img1/index/hero/hero-pc-1x.jpg);
 
         @media 
@@ -65,16 +72,6 @@
 
 .navigation__menu.is-open .hero{
     opacity: 0;
-}
-
-.hero__container{
-    padding-top: 118px;
-    padding-bottom: 118px;
-
-    @media screen and (min-width:1200px){
-        padding-top: 200px;
-        padding-bottom: 200px;
-    }
 }
 
 .hero__title{

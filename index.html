@@ -46,23 +46,25 @@
               </a>
             </li>
           </ul> 
-          <ul class="contacts">
-            <li class="contacts__item">
-              <a class="contacts__link" href="tel:+12127724150">
-                <svg class="contacts__svg" width="10px" height="16px">
-                  <use href="./img1/svg/sprite1.svg#icon-smartphone"></use>
-                </svg>
-                +1 212-772-4150
-              </a>
-            </li>
-            <li class="contacts__item contacts__item--color">
-              <a class="contacts__link contacts__link--color" href="mailto:info@devstudio.com">
-                <svg class="contacts__svg contacts__svg--height" width="16px" height="12px">
-                  <use href="./img1/svg/sprite1.svg#icon-envelope"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
+          <div class="contacts-container">
+            <ul class="contacts">
+              <li class="contacts__item">
+                <a class="contacts__link" href="tel:+12127724150">
+                  <svg class="contacts__svg" width="10px" height="16px">
+                    <use href="./img1/svg/sprite1.svg#icon-smartphone"></use>
+                  </svg>
+                  +1 212-772-4150
+                </a>
+              </li>
+              <li class="contacts__item contacts__item--color">
+                <a class="contacts__link contacts__link--color" href="mailto:info@devstudio.com">
+                  <svg class="contacts__svg contacts__svg--height" width="16px" height="12px">
+                    <use href="./img1/svg/sprite1.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
             <ul class="navigation-social">
               <li class="navigation-social__item">
                 <a class="navigation-social__link" href="#">
@@ -85,13 +87,13 @@
                 </a>
               </li>
             </ul>
-          </ul>
+          </div>
         </div>
       </nav>
     </div>
   </header>
   <main class="main-wedstudio">  
-    <section class="hero" data-hero>
+    <section class="hero section" data-hero>
       <div class="hero__container container">
         <h1 class="hero__title">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
         <button class="btn" data-modal-open type="button">
@@ -135,11 +137,14 @@
             <label class="auth-form__label" for="comments">Comments</label>
             <textarea class="auth-form__textarea" rows="5" placeholder="Enter the text" name="comment" id="comments"></textarea>
 
-            <label class="checkbox">
-              <input class="checkbox__input" type="checkbox">
-              <span class="checkbox__span"></span>
-                I agree with the letter and accept the <a class="checkbox__link" href="./portfolio.html">Terms and Conditions</a> 
-            </label>
+            <div class="checkbox__container">
+              <label class="checkbox">
+                <input class="checkbox__input" type="checkbox">
+                <span class="checkbox__span"></span>
+                  I agree with the letter and accept the 
+              </label>
+              <a class="checkbox__link" href="./portfolio.html">Terms and Conditions</a>
+            </div>
 
             <button class="auth-form__btn btn" type="submit">
               Send
@@ -150,111 +155,98 @@
         </div>
       </div>
     </section>
-    <section class="benefits-section container">
-      <h2 class="benefits-section__title is-hidden">Benefits</h2> 
+    <section class="benefits-section section">
+      <div class="benefits-container container">
+        <h2 class="benefits-section__title is-hidden">Benefits</h2> 
         <ul class="benefits">
-          <li class="benefits__item">
-            <div class="benefits__svg-container">
-              <svg class="benefits__svg" width="70px" height="70px">
-                <use href="./img1/svg/sprite1.svg#icon-antenna"></use>
-              </svg>
+            <li class="benefits__item">
+              <div class="benefits__svg-container">
+                <svg class="benefits__svg" width="70px" height="70px">
+                  <use href="./img1/svg/sprite1.svg#icon-antenna"></use>
+                </svg>
+              </div>
+              <h3 class="benefits__title">ATTENTION TO DETAILS</h3>
+              <p class="benefits__text">We go into all the details and processes of your business to develop a customized solution.</p>
+            </li>
+            <li class="benefits__item">
+              <div class="benefits__svg-container">
+                <svg class="benefits__svg" width="70px" height="70px">
+                  <use href="./img1/svg/sprite1.svg#icon-clock"></use>
+                </svg>
+              </div>
+              <h3 class="benefits__title">PUNCTUALITY</h3>
+              <p class="benefits__text">With us, you can feel safe and secure. An important principle of the company: respect your time and deadlines.</p>
+            </li>
+            <li class="benefits__item">
+              <div class="benefits__svg-container">
+                <svg class="benefits__svg" width="70px" height="70px">
+                  <use href="./img1/svg/sprite1.svg#icon-diagram"></use>
+                </svg>
+              </div>
+              <h3 class="benefits__title">PLANNING</h3>
+              <p class="benefits__text">You will be able to observe and participate in every phase of solution development and implementation.</p>
+            </li>
+            <li class="benefits__item">
+              <div class="benefits__svg-container">
+                <svg class="benefits__svg" width="70px" height="70px">
+                  <use href="./img1/svg/sprite1.svg#icon-astronaut"></use>
+                </svg>
+              </div>
+              <h3 class="benefits__title">MODERN TECHNOLOGIES</h3>
+              <p class="benefits__text">We use innovative tools to solve assigned tasks. It's time to simplify work processes.</p>
+            </li>
+        </ul>
+      </div>
+    </section>
+    <section class="about-section section">
+      <div class="about-container container">
+        <h2 class="about-section__title title">What we do</h2>
+        <ul class="about">
+          <li class="about__item">
+            <img class="about__img" 
+            width="370"
+            srcset="./img1/index/about/about-photo1-1x.jpg 1x ,
+            ./img1/index/about/about-photo1-2x.jpg 2x ,
+            ./img1/index/about/about-photo1-3x.jpg 3x "
+            src="./img1/index/about/about-photo1-3x.jpg" 
+            alt="man coding site">
+            <div class="about__desc-container">
+              <p class="about__desc">DESKTOP APPS</p>
             </div>
-            <h3 class="benefits__title">ATTENTION TO DETAILS</h3>
-            <p class="benefits__text">We go into all the details and processes of your business to develop a customized solution.</p>
           </li>
-          <li class="benefits__item">
-            <div class="benefits__svg-container">
-              <svg class="benefits__svg" width="70px" height="70px">
-                <use href="./img1/svg/sprite1.svg#icon-clock"></use>
-              </svg>
+          <li class="about__item">
+            <img class="about__img" 
+            width="370" 
+            srcset="./img1/index/about/about-photo2-1x.jpg 1x ,
+            ./img1/index/about/about-photo2-2x.jpg 2x ,
+            ./img1/index/about/about-photo2-3x.jpg 3x "
+            src="./img1/index/about/about-photo2-3x.jpg"
+            alt="man tasting site">
+            <div class="about__desc-container">
+              <p class="about__desc">Mobile APPS</p>
             </div>
-            <h3 class="benefits__title">PUNCTUALITY</h3>
-            <p class="benefits__text">With us, you can feel safe and secure. An important principle of the company: respect your time and deadlines.</p>
           </li>
-          <li class="benefits__item">
-            <div class="benefits__svg-container">
-              <svg class="benefits__svg" width="70px" height="70px">
-                <use href="./img1/svg/sprite1.svg#icon-diagram"></use>
-              </svg>
+          <li class="about__item">
+            <img class="about__img" 
+            width="370"
+            srcset="./img1/index/about/about-photo3-1x.jpg 1x ,
+            ./img1/index/about/about-photo3-2x.jpg 2x ,
+            ./img1/index/about/about-photo3-3x.jpg 3x "
+            src="./img1/index/about/about-photo3-3x.jpg" 
+            alt="man designing site">
+            <div class="about__desc-container">
+              <p class="about__desc">DESIGN SOLUTIONS</p>
             </div>
-            <h3 class="benefits__title">PLANNING</h3>
-            <p class="benefits__text">You will be able to observe and participate in every phase of solution development and implementation.</p>
-          </li>
-          <li class="benefits__item">
-            <div class="benefits__svg-container">
-              <svg class="benefits__svg" width="70px" height="70px">
-                <use href="./img1/svg/sprite1.svg#icon-astronaut"></use>
-              </svg>
-            </div>
-            <h3 class="benefits__title">MODERN TECHNOLOGIES</h3>
-            <p class="benefits__text">We use innovative tools to solve assigned tasks. It's time to simplify work processes.</p>
           </li>
         </ul>
+      </div>
     </section>
-    <section class="about-section container">
-      <h2 class="about-section__title title">What we do</h2>
-      <ul class="about">
-        <li class="about__item">
-          <img class="about__img" 
-          width="370"
-          srcset="./img1/index/about/about-photo1-1x.jpg 1x ,
-          ./img1/index/about/about-photo1-2x.jpg 2x ,
-          ./img1/index/about/about-photo1-3x.jpg 3x "
-          src="./img1/index/about/about-photo1-3x.jpg" 
-          alt="man coding site">
-          <div class="about__desc-container">
-            <p class="about__desc">DESKTOP APPS</p>
-          </div>
-        </li>
-        <li class="about__item">
-          <img class="about__img" 
-          width="370" 
-          srcset="./img1/index/about/about-photo2-1x.jpg 1x ,
-          ./img1/index/about/about-photo2-2x.jpg 2x ,
-          ./img1/index/about/about-photo2-3x.jpg 3x "
-          src="./img1/index/about/about-photo2-3x.jpg"
-          alt="man tasting site">
-          <div class="about__desc-container">
-            <p class="about__desc">Mobile APPS</p>
-          </div>
-        </li>
-        <li class="about__item">
-          <img class="about__img" 
-          width="370"
-          srcset="./img1/index/about/about-photo3-1x.jpg 1x ,
-          ./img1/index/about/about-photo3-2x.jpg 2x ,
-          ./img1/index/about/about-photo3-3x.jpg 3x "
-          src="./img1/index/about/about-photo3-3x.jpg" 
-          alt="man designing site">
-          <div class="about__desc-container">
-            <p class="about__desc">DESIGN SOLUTIONS</p>
-          </div>
-        </li>
-      </ul>
-    </section>
-    <section class="workers-section">
-      <div class="container">
+    <section class="workers-section section">
+      <div class="workers-container container">
         <h2 class="workers-section__title title">Our Team</h2>
         <ul class="worker">
           <li class="worker__item">
             <picture>
-              <source 
-              srcset=" 
-              ./img1/index/workers/worker-photo1-mobile-1x.jpg 1x , 
-              ./img1/index/workers/worker-photo1-mobile-2x.jpg 2x , 
-              ./img1/index/workers/worker-photo1-mobile-3x.jpg 3x" 
-              type="image/jpeg" 
-              media="(max-width: 480px)"
-              >
-
-              <source 
-              srcset=" 
-              ./img1/index/workers/worker-photo1-tablet-1x.jpg 1x , 
-              ./img1/index/workers/worker-photo1-tablet-2x.jpg 2x , 
-              ./img1/index/workers/worker-photo1-tablet-3x.jpg 3x" 
-              type="image/jpeg" 
-              media="(max-width: 768px)"
-              >
 
               <source 
               srcset=" 
@@ -262,9 +254,26 @@
               ./img1/index/workers/worker-photo1-pc-2x.jpg 2x , 
               ./img1/index/workers/worker-photo1-pc-3x.jpg 3x" 
               type="image/jpeg" 
-              media="(min-width: 769px)"
+              media="(min-width: 1200px)"
               >
               
+              <source 
+              srcset=" 
+              ./img1/index/workers/worker-photo1-tablet-1x.jpg 1x , 
+              ./img1/index/workers/worker-photo1-tablet-2x.jpg 2x , 
+              ./img1/index/workers/worker-photo1-tablet-3x.jpg 3x" 
+              type="image/jpeg" 
+              media="(min-width: 768px)"
+              >
+              
+              <source 
+              srcset=" 
+              ./img1/index/workers/worker-photo1-mobile-1x.jpg 1x , 
+              ./img1/index/workers/worker-photo1-mobile-2x.jpg 2x , 
+              ./img1/index/workers/worker-photo1-mobile-3x.jpg 3x" 
+              type="image/jpeg" 
+              >
+
               <img class="worker__img" src="./img1/index/workers/worker-photo1-pc-3x.jpg" alt="man whith glasses">
             </picture>
             <div class="worker__container">
@@ -304,23 +313,6 @@
           </li>
           <li class="worker__item">
             <picture>
-              <source 
-              srcset=" 
-              ./img1/index/workers/worker-photo2-mobile-1x.jpg 1x , 
-              ./img1/index/workers/worker-photo2-mobile-2x.jpg 2x , 
-              ./img1/index/workers/worker-photo2-mobile-3x.jpg 3x" 
-              type="image/jpeg" 
-              media="(max-width: 480px)"
-              >
-
-              <source 
-              srcset=" 
-              ./img1/index/workers/worker-photo2-tablet-1x.jpg 1x , 
-              ./img1/index/workers/worker-photo2-tablet-2x.jpg 2x , 
-              ./img1/index/workers/worker-photo2-tablet-3x.jpg 3x" 
-              type="image/jpeg" 
-              media="(max-width: 768px)"
-              >
 
               <source 
               srcset=" 
@@ -328,7 +320,24 @@
               ./img1/index/workers/worker-photo2-pc-2x.jpg 2x , 
               ./img1/index/workers/worker-photo2-pc-3x.jpg 3x" 
               type="image/jpeg" 
-              media="(min-width: 769px)"
+              media="(min-width: 1200px)"
+              >
+              
+              <source 
+              srcset=" 
+              ./img1/index/workers/worker-photo2-tablet-1x.jpg 1x , 
+              ./img1/index/workers/worker-photo2-tablet-2x.jpg 2x , 
+              ./img1/index/workers/worker-photo2-tablet-3x.jpg 3x" 
+              type="image/jpeg" 
+              media="(min-width: 768px)"
+              >
+              
+              <source 
+              srcset=" 
+              ./img1/index/workers/worker-photo2-mobile-1x.jpg 1x , 
+              ./img1/index/workers/worker-photo2-mobile-2x.jpg 2x , 
+              ./img1/index/workers/worker-photo2-mobile-3x.jpg 3x" 
+              type="image/jpeg" 
               >
 
               <img class="worker__img" src="./img1/index/workers/worker-photo2-pc-3x.jpg" alt="girl whith glasses">
@@ -370,23 +379,6 @@
           </li>
           <li class="worker__item">
             <picture>
-              <source 
-              srcset=" 
-              ./img1/index/workers/worker-photo3-mobile-1x.jpg 1x , 
-              ./img1/index/workers/worker-photo3-mobile-2x.jpg 2x , 
-              ./img1/index/workers/worker-photo3-mobile-3x.jpg 3x" 
-              type="image/jpeg" 
-              media="(max-width: 480px)"
-              >
-
-              <source 
-              srcset=" 
-              ./img1/index/workers/worker-photo3-tablet-1x.jpg 1x , 
-              ./img1/index/workers/worker-photo3-tablet-2x.jpg 2x , 
-              ./img1/index/workers/worker-photo3-tablet-3x.jpg 3x" 
-              type="image/jpeg" 
-              media="(max-width: 768px)"
-              >
 
               <source 
               srcset=" 
@@ -394,7 +386,24 @@
               ./img1/index/workers/worker-photo3-pc-2x.jpg 2x , 
               ./img1/index/workers/worker-photo3-pc-3x.jpg 3x" 
               type="image/jpeg" 
-              media="(min-width: 769px)"
+              media="(min-width: 1200px)"
+              >
+              
+              <source 
+              srcset=" 
+              ./img1/index/workers/worker-photo3-tablet-1x.jpg 1x , 
+              ./img1/index/workers/worker-photo3-tablet-2x.jpg 2x , 
+              ./img1/index/workers/worker-photo3-tablet-3x.jpg 3x" 
+              type="image/jpeg" 
+              media="(min-width: 768px)"
+              >
+              
+              <source 
+              srcset=" 
+              ./img1/index/workers/worker-photo3-mobile-1x.jpg 1x , 
+              ./img1/index/workers/worker-photo3-mobile-2x.jpg 2x , 
+              ./img1/index/workers/worker-photo3-mobile-3x.jpg 3x" 
+              type="image/jpeg" 
               >
 
               <img class="worker__img" src="./img1/index/workers/worker-photo3-pc-3x.jpg" alt="man whith short haircut">
@@ -436,23 +445,6 @@
           </li>
           <li class="worker__item">
             <picture>
-              <source 
-              srcset=" 
-              ./img1/index/workers/worker-photo4-mobile-1x.jpg 1x , 
-              ./img1/index/workers/worker-photo4-mobile-2x.jpg 2x , 
-              ./img1/index/workers/worker-photo4-mobile-3x.jpg 3x" 
-              type="image/jpeg" 
-              media="(max-width: 480px)"
-              >
-
-              <source 
-              srcset=" 
-              ./img1/index/workers/worker-photo4-tablet-1x.jpg 1x , 
-              ./img1/index/workers/worker-photo4-tablet-2x.jpg 2x , 
-              ./img1/index/workers/worker-photo4-tablet-3x.jpg 3x" 
-              type="image/jpeg" 
-              media="(max-width: 768px)"
-              >
 
               <source 
               srcset=" 
@@ -460,7 +452,24 @@
               ./img1/index/workers/worker-photo4-pc-2x.jpg 2x , 
               ./img1/index/workers/worker-photo4-pc-3x.jpg 3x" 
               type="image/jpeg" 
-              media="(min-width: 769px)"
+              media="(min-width: 1200px)"
+              >
+              
+              <source 
+              srcset=" 
+              ./img1/index/workers/worker-photo4-tablet-1x.jpg 1x , 
+              ./img1/index/workers/worker-photo4-tablet-2x.jpg 2x , 
+              ./img1/index/workers/worker-photo4-tablet-3x.jpg 3x" 
+              type="image/jpeg" 
+              media="(min-width: 768px)"
+              >
+              
+              <source 
+              srcset=" 
+              ./img1/index/workers/worker-photo4-mobile-1x.jpg 1x , 
+              ./img1/index/workers/worker-photo4-mobile-2x.jpg 2x , 
+              ./img1/index/workers/worker-photo4-mobile-3x.jpg 3x" 
+              type="image/jpeg" 
               >
 
               <img class="worker__img" src="./img1/index/workers/worker-photo4-pc-3x.jpg" alt="man whith glasses">
@@ -503,52 +512,54 @@
         </ul>
       </div>
     </section>
-    <section class="customers-section container">
-      <h2 class="customers__title title">Regular Customers</h2>
-      <ul class="customer">
-        <li class="customer__item">
-          <a class="customer__link" aria-label="to partner's site" href="#">
-            <svg class="customer__svg" width="106px" height="60px">
-              <use href="./img1/svg/sprite1.svg#icon-client-1"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="customer__item">
-          <a class="customer__link" aria-label="to partner's site" href="#">
-            <svg class="customer__svg" width="106px" height="60px">
-              <use href="./img1/svg/sprite1.svg#icon-client-2"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="customer__item">
-          <a class="customer__link" aria-label="to partner's site" href="#">
-            <svg class="customer__svg" width="106px" height="60px">
-              <use href="./img1/svg/sprite1.svg#icon-client-3"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="customer__item">
-          <a class="customer__link" aria-label="to partner's site" href="#">
-            <svg class="customer__svg" width="106px" height="60px">
-              <use href="./img1/svg/sprite1.svg#icon-client-4"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="customer__item">
-          <a class="customer__link" aria-label="to partner's site" href="#">
-            <svg class="customer__svg" width="106px" height="60px">
-              <use href="./img1/svg/sprite1.svg#icon-client-5"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="customer__item" >
-          <a class="customer__link" aria-label="to partner's site" href="">
-            <svg class="customer__svg" width="106px" height="60px">
-              <use href="./img1/svg/sprite1.svg#icon-client-6"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+    <section class="customers-section section">
+      <div class="customers-container container">
+        <h2 class="customers__title title">Regular Customers</h2>
+        <ul class="customer">
+          <li class="customer__item">
+            <a class="customer__link" aria-label="to partner's site" href="#">
+              <svg class="customer__svg" width="106px" height="60px">
+                <use href="./img1/svg/sprite1.svg#icon-client-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="customer__item">
+            <a class="customer__link" aria-label="to partner's site" href="#">
+              <svg class="customer__svg" width="106px" height="60px">
+                <use href="./img1/svg/sprite1.svg#icon-client-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="customer__item">
+            <a class="customer__link" aria-label="to partner's site" href="#">
+              <svg class="customer__svg" width="106px" height="60px">
+                <use href="./img1/svg/sprite1.svg#icon-client-3"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="customer__item">
+            <a class="customer__link" aria-label="to partner's site" href="#">
+              <svg class="customer__svg" width="106px" height="60px">
+                <use href="./img1/svg/sprite1.svg#icon-client-4"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="customer__item">
+            <a class="customer__link" aria-label="to partner's site" href="#">
+              <svg class="customer__svg" width="106px" height="60px">
+                <use href="./img1/svg/sprite1.svg#icon-client-5"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="customer__item" >
+            <a class="customer__link" aria-label="to partner's site" href="">
+              <svg class="customer__svg" width="106px" height="60px">
+                <use href="./img1/svg/sprite1.svg#icon-client-6"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
   </main>
   <footer class="footer">
@@ -609,7 +620,7 @@
           </ul>
       </div>
       <div class="footer__form">
-        <p class="footer__title">Subscribe to the newsletter</p>
+        <p class="footer__title footer__title--margin">Subscribe to the newsletter</p>
         <form class="mini-form">
   
           <input class="mini-form__input" placeholder="E-mail" type="email">

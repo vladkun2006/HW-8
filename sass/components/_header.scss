@@ -1,15 +1,12 @@
 .header{
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
     @media screen and (min-width:768px) {
     border-bottom: 1px $secondary-border-color solid;
-    }
-}
-
-.header__container{
-    position: relative;
-    padding: 16px 15px;
-
-    @media screen and (min-width:768px) {
-        padding: 21px 15px;
+    padding-top: 21px;
+    padding-bottom: 21px;
     }
 
     @media screen and (min-width:1200px){

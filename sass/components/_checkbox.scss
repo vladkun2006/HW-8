@@ -2,16 +2,21 @@
     height: 24px;
     display: flex;
     align-items: center;
-    margin-top: 20px;
     text-align: start;
-    font-size: 12px;
-    letter-spacing: 0.03em;
     margin-left: 24px;
-
     @media screen and (min-width:1200px ) {
         margin-left: 36px;
         font-size: 14px;
     }
+}
+
+.checkbox__container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 12px;
+    letter-spacing: 0.03em;
 }
 
 .checkbox__input{
@@ -20,7 +25,8 @@
 
 .checkbox__span{
     position: absolute;
-    left: 20px;
+    top: 4px;
+    left: 0px;
     width: 16px;
     height: 15px;
     border: 2px $logo-color solid;
@@ -41,29 +47,27 @@
     background-origin: border-box;
     }
 
-    @media screen and (min-width:480px ) {
-        left: 40px;
-    }
+    // @media screen and (min-width:480px ) {
+    //     left: 40px;
+    // }
 
     @media screen and (min-width:1200px ) {
-        left: 52px;
-    }
-}
-
-.checkbox__container{
-    margin-left: 24px;
-
-    @media screen and (min-width:1200px ) {
-        margin-left: 36px;
+        left: 12px;
     }
 }
 
 .checkbox__link{
+    margin-left: 2px;
+    display: inline;
     color: $logo-part-color;
     text-decoration: underline;
 
     &:hover,
     &:focus{
         color: $btn-hover-color;
+    }
+
+    @media screen and (min-width:1200px ) {
+        font-size: 14px;
     }
 }

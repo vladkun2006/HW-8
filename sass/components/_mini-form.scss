@@ -20,6 +20,8 @@
     border-radius: 4px;
     border: 1px $mini-form-color solid;
     transition: border-color $cubic;
+    caret-color: $primary-border-color;
+    color: $primary-border-color;
 
     &:hover,
     &:focus{
